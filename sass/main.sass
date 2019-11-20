@@ -182,6 +182,8 @@ input, button
 			line-height: 14px
 
 			&__title
+				display: inline-block
+				margin-left: 15px
 				text-transform: uppercase
 			&__number
 				font-size: 24px
@@ -219,7 +221,7 @@ nav.nav
 			&:last-child
 				border: 0
 			a
-				color: #5785AD
+				color: #2b5c8b
 				display: block
 				padding: 13px 2px
 				width: 100%
@@ -574,7 +576,7 @@ nav.nav
 
 @media (min-width: 1001px)
 	.slider
-		height: 720px
+		height: 500px
 
 @media (min-width: 769px) and (max-width: 1000px)
 	.slider
@@ -815,9 +817,14 @@ nav.nav
 	&__map
 		position: static
 		div
-			width: 50vw; position: absolute; left: 0
-			
-		
+			width: 50vw
+			position: absolute
+			left: 0
+	strong
+		font-size: 24px
+    	line-height: 29px
+
+
 .modal
 	&-dialog
 		max-width: 420px
