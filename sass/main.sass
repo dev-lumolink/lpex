@@ -230,7 +230,7 @@ nav.nav
 
 @media (min-width: 769px)
 	main
-		margin-top: 150px
+		margin-top: 140px
 
 @media (min-width: 481px) and (max-width: 768px)
 	main
@@ -238,7 +238,7 @@ nav.nav
 
 @media screen and (max-width: 480px)
 	main
-		margin-top: 150px
+		margin-top: 130px
 
 .sect1
 	background: url(../img/header.png) no-repeat left /60% 600px,url(../img/sect1.png) no-repeat right /auto 100%
@@ -249,14 +249,22 @@ nav.nav
 	text-transform: uppercase
 	font-family: Futura Futuris
 	font-weight: 400
+	padding: 120px 0
 	&__title
 		max-width: 542px
 		font-size: 30px
 		font-weight: bold
 		line-height: 36px
-		margin:
-			top: 164px
-			bottom: 220px	
+		margin-bottom: 30px
+	&__subtitle
+		display: inline-block
+		max-width: 542px
+		font-size: 20px
+		line-height: 1
+		background: rgba(255,255,255,.7)
+		color: #3a8ecc
+		padding: 10px 10px 5px
+
 
 .sect2
 	.opros
@@ -881,8 +889,6 @@ nav.nav
 @media screen and (max-width: 1200px)
 	section
 		padding: 50px 0
-	.sect1__title
-		margin: 105px 0
 	.sect2 .opros__descr
 		&>.row
 			height: 100%
@@ -934,8 +940,10 @@ nav.nav
 	.sect1__title
 		font-size: 20px
 		max-width: 361px
-		margin: 83px 0 94px
+		margin-bottom: 20px
 		line-height: normal
+	.sect1__subtitle
+		font-size: 16px
 	.sect2 .opros input
 		font-size: 14px
 	.sect2 .opros__descr .main__block span, .sect2 .opros__descr .main form.contact .contact__label
@@ -1006,11 +1014,14 @@ nav.nav
 	ul.menu
 		flex-direction: column
 	.sect1
-		background: url(../img/header.png) no-repeat left/60% auto,url(../img/sect1.png) no-repeat right/auto 100%;
+		background: url(../img/header.png) no-repeat left/60% 110%,url(../img/sect1.png) no-repeat right/auto 100%;
+		padding: 60px 0
 		&__title 
 			font-size: 14px
-			margin: 58px 0
 			width: 50%
+		&__subtitle
+			font-size: 10px
+			max-width: 50%
 	button.zayavka-btn
 		font-size: 16px !important
 	.header__zayavka 
@@ -1076,6 +1087,8 @@ nav.nav
 @media screen and (max-width: 479px)
 	.header 
    		padding-top: 20px
+	.sect1
+		background: url(../img/header.png) no-repeat left/60% 110%,url(../img/sect1.png) no-repeat center/auto 100%;
 	.sect1__title
 		margin: 15px 0
 	.footer__addr, .footer__email, .footer__number
